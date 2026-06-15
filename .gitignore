@@ -1,6 +1,16 @@
-node_modules/
+# Dependencies
+**/node_modules/
+**/.next/
+
+# Environment variables (CRITICAL!)
 .env
-dist/
-build/
-__pycache__/
+.env.local
+.env.production
+
+# IDE
 .vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
