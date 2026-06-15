@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_section_media",
+  "info": {
+    "displayName": "Section Media"
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image_link": {
+      "type": "string"
+    },
+    "alt_text": {
+      "type": "string"
+    },
+    "profession_title": {
+      "type": "string"
+    },
+    "image_quote": {
+      "type": "text"
+    }
+  }
+}

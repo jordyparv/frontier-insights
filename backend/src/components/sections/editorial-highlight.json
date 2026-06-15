@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_editorial_highlight",
+  "info": {
+    "displayName": "Editorial Highlight",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "text" },
+    "description": { "type": "richtext" },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

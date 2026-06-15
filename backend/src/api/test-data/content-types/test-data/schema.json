@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_datas",
+  "info": {
+    "singularName": "test-data",
+    "pluralName": "test-datas",
+    "displayName": "test_Data"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "test": {
+      "type": "string"
+    }
+  }
+}

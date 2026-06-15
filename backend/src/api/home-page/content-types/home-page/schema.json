@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_title": {
+      "type": "string"
+    },
+    "hero_subtitle": {
+      "type": "text"
+    },
+    "hero_description": {
+      "type": "text"
+    },
+    "partner_logos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partner.partner"
+    },
+    "hero_cta_primary_txt": {
+      "type": "string"
+    },
+    "hero_cta_primary_link": {
+      "type": "string"
+    },
+    "hero_cta_primary_active": {
+      "type": "boolean"
+    },
+    "hero_cta_secondary_txt": {
+      "type": "string"
+    },
+    "hero_cta_secondary_link": {
+      "type": "string"
+    },
+    "hero_cta_secondary_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "partner_brand_txt": {
+      "type": "string"
+    },
+    "hero_micro_label": {
+      "type": "string",
+      "default": "FRONTLINE INSIGHTS"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.magazine-release",
+        "sections.elite-archives",
+        "sections.women-visionaries",
+        "sections.hall-of-fame",
+        "sections.trending-insights",
+        "sections.innovation-technology",
+        "sections.visionary-voices",
+        "sections.showcase",
+        "sections.editorial-highlight"
+      ]
+    }
+  }
+}

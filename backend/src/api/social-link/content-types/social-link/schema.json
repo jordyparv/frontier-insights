@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_links",
+  "info": {
+    "singularName": "social-link",
+    "pluralName": "social-links",
+    "displayName": "Social Link"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": ["instagram","twitter","linkedin","youtube","facebook"],
+      "required": true
+    },
+    "url": { "type": "string", "required": true },
+    "order": { "type": "integer", "required": true },
+    "active": { "type": "boolean", "default": true }
+  }
+}

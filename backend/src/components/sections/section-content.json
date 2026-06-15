@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_section_content",
+  "info": {
+    "displayName": "Section Content"
+  },
+  "attributes": {
+    "micro_label": { "type": "string" },
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "text" },
+    "description": { "type": "richtext" },
+    "primary_button_text": { "type": "string" },
+    "primary_button_link": { "type": "string" },
+    "secondary_button_text": { "type": "string" },
+    "secondary_button_link": { "type": "string" }
+  }
+}

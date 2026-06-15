@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_sections",
+  "info": {
+    "singularName": "home-section",
+    "pluralName": "home-sections",
+    "displayName": "Home Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "internal_name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "internal_name"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "magazine-release",
+        "elite-archives",
+        "women-visionaries",
+        "hall-of-fame",
+        "trending-insights",
+        "innovation-technology",
+        "visionary-voices",
+        "showcase",
+        "editorial-highlight"
+      ],
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.section-content"
+    },
+    "media_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.section-media"
+    }
+  }
+}

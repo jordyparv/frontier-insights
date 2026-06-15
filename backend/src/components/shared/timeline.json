@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_shared_timelines",
+  "info": {
+    "displayName": "Timeline"
+  },
+  "attributes": {
+    "year": { "type": "string" },
+    "text": { "type": "text" }
+  }
+}

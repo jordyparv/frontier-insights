@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footer_quick_links",
+  "info": {
+    "singularName": "footer-quick-link",
+    "pluralName": "footer-quick-links",
+    "displayName": "Footer Quick Link"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "href": { "type": "string", "required": true },
+    "order": { "type": "integer", "required": true },
+    "active": { "type": "boolean", "default": true }
+  },
+   "site_setting": {
+    "type": "relation",
+    "relation": "manyToOne",
+    "target": "api::site-setting.site-setting",
+    "inversedBy": "footer_quick_links"
+  }
+}

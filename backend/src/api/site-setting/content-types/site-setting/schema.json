@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Setting"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site_name": {
+      "type": "string",
+      "required": true
+    },
+    "navbar_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::nav-item.nav-item"
+    },
+    "footer_quick_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::footer-quick-link.footer-quick-link"
+    },
+    "social_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-link.social-link"
+    },
+    "show_contact_button": {
+      "type": "boolean",
+      "default": true
+    },
+    "footer_micro_label": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "email"
+    },
+    "copyright_description": {
+      "type": "text"
+    },
+    "footer_brand_name": {
+      "type": "string"
+    },
+    "footer_brand_name_left": {
+      "type": "string"
+    },
+    "footer_brand_name_right": {
+      "type": "string"
+    },
+    "site_logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

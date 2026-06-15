@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "about",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero_title": { "type": "string" },
+    "hero_subtitle": { "type": "text" },
+    "hero_label": { "type": "string" },
+
+    "story_title": { "type": "string" },
+    "story_text_1": { "type": "richtext" },
+    "story_text_2": { "type": "richtext" },
+
+    "story_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+
+    "philosophy": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.value"
+    },
+
+    "timeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.timeline"
+    },
+
+    "cta_text": { "type": "string" },
+    "cta_button": { "type": "string" }
+  }
+}

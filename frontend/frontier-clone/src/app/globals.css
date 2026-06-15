@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+body {
+  font-family: var(--font-inter);
+}
+
+.font-serif {
+  font-family: var(--font-playfair);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+@keyframes goldShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes slowGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes floatParticle {
+  0% { transform: translateY(0px) translateX(0px); opacity: 0.4; }
+  50% { transform: translateY(-20px) translateX(10px); opacity: 0.8; }
+  100% { transform: translateY(0px) translateX(0px); opacity: 0.4; }
+}
+
+.animate-goldShimmer {
+  background-size: 200% auto;
+  animation: goldShimmer 6s linear infinite;
+}
+
+.animate-slowGradient {
+  background-size: 200% 200%;
+  animation: slowGradientMove 20s ease infinite;
+}
+
+.animate-float {
+  animation: floatParticle 8s ease-in-out infinite;
+}
+
+.perspective-\[2000px\] {
+  perspective: 2000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.react-pageflip {
+  box-shadow:
+    0 40px 80px rgba(0,0,0,0.4),
+    inset 0 0 40px rgba(0,0,0,0.1);
+}
+
+@keyframes roseShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+@keyframes shimmerAudio {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    #aaa 25%,
+    #c8a85d 50%,
+    #aaa 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmerAudio 1.8s infinite linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
